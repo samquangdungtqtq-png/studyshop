@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>StudyShop – Đồ dùng học tập</title>
+  <style>
+    *{
+     margin:0;
+     padding:0;
+     box-sizing:border-box;
+    }
+    body{
+     background:#B2DFDB;
+     color:#0A3D62;
+     font-family:"Segoe UI", sans-serif;
+    }
+    a{
+     text-decoration:none;
+     color:inherit;
+    }
+    header{
+     color:white;
+    }
+    .menu{
+      background: #B2DFDB;
+     text-align: center;
+     padding: 12px;
+    }
+    .menu a{
+      color: #0A3D62;
+      margin: 0 15px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    .logo{
+      position: absolute;
+      top: 20px;
+      left: 30px;
+      width: 80px;
+    }
+    .banner{
+     display:flex;
+     justify-content:center;
+     align-items:center;
+     position: relative;
+     height: 300px;
+     background: url("banner.jpg");
+    }
+	.uudiem{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    padding:40px 80px;
+    background:#B2DFDB;
+    }
+    .video{
+    width:100%;
+    margin:0;
+    }
+
+    .video iframe{
+    width:90%;
+    height:300px;
+    display:block;
+    margin:0 auto; 
+    }
+    .km{
+     background:#bfb890;
+     text-align:center;
+     padding:10px;
+     font-weight:bold;
+     font-size:18px;
+    }
+    .mota{
+     text-align:center;
+     color:#555;
+     margin-bottom:10px;
+    }
+    .divider{
+     width:100%;
+     height:5px;
+     background:linear-gradient(to right,#1f2123,#1b1d20);
+    }
+    .box{
+     background:#E0F2F1;
+     padding:25px;
+     border-radius:12px;
+    text-align:center;
+    width:250px;
+    transition:0.3s;
+    }
+
+    .box h3{
+     margin-bottom:10px;
+     color:#00796B;
+    }
+    main{
+     padding:60px 80px;
+    }
+    .tieude{
+     text-align:center;
+     font-size:32px;
+     margin-bottom:40px;
+    }
+   .cacsanpham{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:30px;
+    }
+    .sanpham{
+      background:white;
+      border-radius:12px;
+      overflow:hidden;
+      transition:0.3s;
+      box-shadow:0 6px 16px rgba(0,0,0,0.1);
+    }
+   .sanpham img{
+     width:100%;
+     height:200px;
+     object-fit:contain;
+    }
+    .noidungsp{
+     padding:18px;
+     text-align:center;
+    }
+   .gia{
+     color:#00796B;
+     font-weight:bold;
+     margin:10px 0;
+    }
+   .noidungsp button{
+     padding:10px 22px;
+    }
+    .map iframe{
+    display: block;
+    margin: 0 auto;
+    }
+
+    footer{
+      background:#0A3D62;
+      color:#ccc;
+      padding:50px 80px 20px;
+    }
+	.thongtinfooter {
+       display: grid;
+       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+       gap: 30px;
+        margin-bottom: 30px;
+    }
+    .cotfooter h4{
+      color:white;
+      margin-bottom:12px;
+    }
+    .banquyen{
+      text-align:center;
+      border-top:1px solid #444;
+      padding-top:15px;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="banner">
+  <img src="logo.jpg" alt="Logo" class="logo">
+  <div class="banner-text">
+    <h1>STUDYSHOP</h1>
+    <p>Đồ dùng học tập chất lượng</p>
+  </div>
+  </div>
+  <div class="menu">
+      <a href="index.html">Trang chủ</a>
+      <a href="about.html">Giới thiệu</a>
+	  <a href="products.html">Bút</a>
+	  <a href="compa.html"> Compa</a>
+	  <a href="vo.html">Vở</a>
+	  <a href="balo.html">Balo</a>
+	  <a href="contact.html">Liên hệ</a>
+    </div>
+</header>
+<section class="uudiem">
+  <div class="box">
+    <h3> Đa dạng sản phẩm</h3>
+    <p>Nhiều loại đồ dùng học tập cho học sinh.</p>
+  </div>
+
+  <div class="box">
+    <h3> Giá cả hợp lý</h3>
+    <p>Giá phù hợp với học sinh và sinh viên.</p>
+  </div>
+
+  <div class="box">
+    <h3>Chất lượng đảm bảo</h3>
+    <p>Sản phẩm từ các thương hiệu uy tín.</p>
+  </div>
+</section>
+<div class="divider"></div>
+<div class="video">
+  <iframe 
+  src="https://www.youtube.com/embed/tOIsvIjVBj8?autoplay=1&mute=1"
+  frameborder="0"
+  allow="autoplay; encrypted-media"
+  allowfullscreen>
+</iframe>
+</div>
+<div class="km">
+  🎉 Khuyến mãi giảm giá: Giảm 10% cho đơn hàng đầu tiên!
+</div>
+<p class="mota">
+  Chọn lựa những sản phẩm học tập chất lượng với giá tốt nhất!
+</p>
+<main>
+  <h2 class="tieude">Sản phẩm nổi bật</h2>
+  <div class="cacsanpham">
+    <div class="sanpham">
+      <img src="vocaocap.jpg" alt="Vở cao cấp">
+      <div class="noidungsp">
+        <h3>Vở viết cao cấp</h3>
+        <p class="gia">15.000đ</p>
+        <button><a href="contact.html">Mua ngay</a></button>
+      </div>
+    </div>
+    <div class="sanpham">
+      <img src="butbi.jpg" alt="Bút bi">
+      <div class="noidungsp">
+        <h3>Bút bi Thiên Long</h3>
+        <p class="gia">5.000đ</p>
+        <button><a href="contact.html">Mua ngay</a></button>
+      </div>
+    </div>
+    <div class="sanpham">
+      <img src="balo.jpg" alt="Balo">
+      <div class="noidungsp">
+        <h3>Balo học sinh</h3>
+        <p class="gia">250.000đ</p>
+        <button><a href="contact.html">Mua ngay</a></button>
+      </div>
+    </div>
+	<div class="sanpham">
+      <img src="butchi.jpg">
+      <div class="noidungsp">
+        <h3>Bút chì 2B</h3>
+        <p class="gia">4.000đ</p>
+        <button><a href="contact.html">Mua ngay</a></button>
+      </div>
+    </div>
+    <div class="sanpham">
+      <img src="thuocke.jpg">
+      <div class="noidungsp">
+        <h3>Thước kẻ 20cm</h3>
+        <p class="gia">6.000đ</p>
+        <button><a href="contact.html">Mua ngay</a></button>
+      </div>
+    </div>
+    <div class="sanpham">
+      <img src="tay.jpg">
+      <div class="noidungsp">
+        <h3>Tẩy học sinh</h3>
+        <p class="gia">3.000đ</p>
+        <button><a href="contact.html">Mua ngay</a></button>
+      </div>
+    </div>
+    <div class="sanpham">
+      <img src="butda.jpg">
+      <div class="noidungsp">
+        <h3>Bút dạ quang</h3>
+        <p class="gia">10.000đ</p>
+        <button><a href="contact.html">Mua ngay</a></button>
+      </div>
+    </div>
+    <div class="sanpham">
+      <img src="hopbut.jpg">
+      <div class="noidungsp">
+        <h3>Hộp bút</h3>
+        <p class="gia">35.000đ</p>
+        <button><a href="contact.html">Mua ngay</a></button>
+      </div>
+    </div>
+    <div class="sanpham">
+      <img src="compa.jpg">
+      <div class="noidungsp">
+       <h3>Compa</h3>
+       <p class="gia">12.000đ</p>
+       <button><a href="contact.html">Mua ngay</a></button>
+      </div>
+    </div>
+    <div class="sanpham">
+      <img src="casio.jpg">
+      <div class="noidungsp">
+        <h3>casio</h3>
+        <p class="gia">700.000đ</p>
+        <button><a href="contact.html">Mua ngay</a></button>
+      </div>
+    </div>
+
+    <div class="sanpham">
+      <img src="butmay.jpg">
+      <div class="noidungsp">
+        <h3>Bút máy</h3>
+        <p class="gia">45.000đ</p>
+        <button><a href="contact.html">Mua ngay</a></button>
+      </div>
+    </div>
+
+    <div class="sanpham">
+      <img src="bangcon.jpg">
+      <div class="noidungsp">
+       <h3>Bảng con</h3>
+       <p class="gia">25.000đ</p>
+       <button><a href="contact.html">Mua ngay</a></button>
+      </div>
+    </div>
+
+    <div class="sanpham">
+      <img src="luyenviet.jpg">
+      <div class="noidungsp">
+        <h3>sổ luyện viết</h3>
+        <p class="gia">8.000đ</p>
+        <button><a href="contact.html">Mua ngay</a></button>
+      </div>
+    </div>
+	<button><a href="https://thienlong.vn/collections/do-dung-hoc-tap">Xem thêm</a></button>
+  </div>
+</main>
+<div class="divider"></div>
+  <h3 style="text-align:center;">📍 Địa chỉ cửa hàng</h3>
+<div class="map">
+<div class="map">
+  <iframe 
+    src="https://www.google.com/maps?q=21.7532119,105.4254041&hl=vi&z=17&output=embed"
+    width="90%" 
+    height="300" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy">
+  </iframe>
+</div>
+
+</div>
+<footer >
+        <div>
+            <div class="thongtinfooter">
+                <div class="cotfooter">
+                    <h4>Về Website</h4>
+                    <p>Website giới thiệu các đồ dùng học tập đẹp đẽ</p>
+                </div>
+                <div class="cotfooter">
+                    <h4>Thông Tin Liên Hệ</h4>
+                    <p>Email: to3chuyenbandodunghoctap@gmail.com</p>
+                    <p>Điện thoại: 03636363636</p>
+                    <p>Địa chỉ: Thôn Tân Thành, xã Minh Thanh tỉnh Tuyên Quang</p>
+                </div>
+                <div class="cotfooter">
+                    <h4>Liên Kết Hữu Ích</h4>
+                    <p>Website đồ dùng học tập</p>
+                    <p>Bộ giáo dục</p>
+                    <p>Cục văn hoá Việt Nam</p>
+					<p>© 2026 <span>StudyShop</span> – Website bán đồ dùng học tập</p>
+                </div>
+            </div>
+            <div class="banquyen">
+                <p>&copy; 2026 Thiết kế bởi <strong>Tổ 3</strong></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

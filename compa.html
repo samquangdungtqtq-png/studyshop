@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Compa Học Sinh</title>
+
+<style>
+
+body{
+margin:0;
+background:mistyrose;
+font-family:"Segoe UI", sans-serif;
+color:#0A3D62;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+header{
+background: linear-gradient(135deg,#5d9cec,#4a89dc);
+color:white;
+position:relative;
+}
+.banner{position:relative;}
+
+.logo{
+position:absolute;
+top:20px;
+left:30px;
+width:100px;
+z-index:2;
+}
+
+.banner{
+position: relative;
+text-align:center;
+padding:60px 50px;
+overflow:hidden;
+}
+
+.banner img.bg{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+object-fit:cover;
+z-index:1;
+}
+
+.banner h1,
+.banner p{
+position:relative;
+z-index:2;
+color:black;
+
+}
+
+
+.banner h1{
+font-size:40px;
+margin:10px 0;
+}
+
+.banner p{
+font-size:18px;
+margin-bottom:20px;
+}
+
+main{
+padding:60px 80px;
+}
+.navbar{
+background:#bde0fe;
+padding:15px 0;
+}
+
+.menu{
+list-style:none;
+display:flex;
+justify-content:center; 
+gap:10px;
+margin:0;
+padding:0;
+}
+
+.menu li a{
+font-weight:600;
+color:#0A3D62;
+padding:8px 12px;
+transition:0.3s;
+}
+
+.menu li a:hover{
+color:#ff6b6b;
+}
+
+.menu li a:link,
+.menu li a:visited,
+.menu li a:active{
+color:#0A3D62;
+}
+.tieude{
+text-align:center;
+font-size:34px;
+margin-bottom:40px;
+color:#0A3D62;
+}
+
+.cacsanpham{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:30px;
+padding:0 40px;
+}
+
+.sanpham{
+background:white;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.sanpham:hover{
+transform:translateY(-5px);
+}
+
+.sanpham img{
+width:100%;
+height:220px;
+object-fit:cover;
+background:white;
+}
+
+.noidungsp{
+padding:20px;
+text-align:center;
+}
+
+.gia{
+color:#4a89dc;
+font-weight:bold;
+font-size:18px;
+margin:10px 0 15px;
+}
+
+.noidungsp button{
+padding:10px 22px;
+border:none;
+border-radius:20px;
+background:#4a89dc;
+color:white;
+cursor:pointer;
+transition:0.3s;
+}
+
+.noidungsp button:hover{
+background:#357ABD;
+}
+
+footer{
+background:#0A3D62;
+color:#c7c7c7;
+text-align:center;
+padding:30px;
+margin-top:70px;
+}
+
+.thongtinfooter{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+margin-bottom:30px;
+text-align:left;
+padding:0 40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="banner">
+<img src="banner3.jpg" class="bg">
+<img src="logo.jpg" class="logo">
+
+<h1>COMPA – Ê KE HỌC SINH</h1>
+<p>Dụng cụ học tập chính xác – bền đẹp – giá tốt</p>
+
+</div>
+</header>
+
+<nav class="navbar">
+<ul class="menu">
+<li><a href="index.html">Trang chủ</a></li>
+<li><a href="gioithieu.html">Giới thiệu</a></li>
+<li><a href="but.html">Bút</a></li>
+<li><a href="compa.html">Compa</a></li>
+<li><a href="vo.html">Vở</a></li>
+<li><a href="balo.html">Balo</a></li>
+<li><a href="contact.html">Liên hệ</a></li>
+</ul>
+</nav>
+
+<h2 style="text-align:center; color:#800080;">
+✨ Chào mừng bạn đến với cửa hàng compa của StudyShop ✨
+</h2>
+
+<h2 class="tieude">CÁC SẢN PHẨM COMPA NỔI BẬT</h2>
+<div class="cacsanpham">
+
+<div class="sanpham">
+<img src="compa.jpg">
+<div class="noidungsp">
+<h3>Compa nhựa</h3>
+<p class="gia">15.000đ</p>
+<button><a href="contact.html">Mua ngay</a></button>
+</div>
+</div>
+
+<div class="sanpham">
+<img src="eke.jpg">
+<div class="noidungsp">
+<h3>Eke nhựa</h3>
+<p class="gia">15.000đ</p>
+<button><a href="contact.html">Mua ngay</a></button>
+</div>
+</div>
+
+<div class="sanpham">
+<img src="boekecopam.jpg">
+<div class="noidungsp">
+<h3>Bộ Compa + Eke</h3>
+<p class="gia">30.000đ</p>
+<button><a href="contact.html">Mua ngay</a></button>
+</div>
+</div>
+
+<div class="sanpham">
+<img src="com1.jpg">
+<div class="noidungsp">
+<h3>Compa kim loại</h3>
+<p class="gia">25.000đ</p>
+<button><a href="contact.html">Mua ngay</a></button>
+</div>
+</div>
+
+<div class="sanpham">
+<img src="com3.jpg">
+<div class="noidungsp">
+<h3>Bộ compa-eke dễ thương </h3>
+<p class="gia">35.000đ</p>
+<button><a href="contact.html">Mua ngay</a></button>
+</div>
+</div>
+
+<div class="sanpham">
+<img src="com2.jpg">
+<div class="noidungsp">
+<h3>Bộ compa-eke gấu </h3>
+<p class="gia">35.000đ</p>
+<button><a href="contact.html">Mua ngay</a></button>
+</div>
+</div>
+
+
+<div class="sanpham">
+<img src="com4.jpg">
+<div class="noidungsp">
+<h3>Bộ compa-eke gấu </h3>
+<p class="gia">35.000đ</p>
+<button><a href="contact.html">Mua ngay</a></button>
+</div>
+</div>
+
+</div>
+
+<br>
+
+<div style="text-align:center;">
+<button style="padding:10px 20px;background:#4a89dc;border:none;border-radius:20px;">
+<a href="index.html">Quay lại trang chủ</a>
+</button>
+</div>
+
+</main>
+
+<footer>
+
+<div class="thongtinfooter">
+
+<div>
+<h4>Về Website</h4>
+<p>Website bán đồ dùng học tập </p>
+</div>
+
+<div>
+<h4>Liên hệ</h4>
+<p>Email: studyshop@gmail.com</p>
+<p>Điện thoại: 0363 636 636</p>
+<p>Địa chỉ: Thôn Tân Thành, xã Minh Thanh tỉnh Tuyên Quang</p>
+</div>
+
+<div>
+<h4>Liên kết</h4>
+<p>Website Đồ Dùng Học Tập</p>
+<p>Bộ Giáo Dục</p>
+<p>Cục Văn Hoá VN</p>
+<p>© 2026 <span>StudyShop</span> – Website bán đồ dùng học tập</p>
+</div>
+
+</div>
+
+<p>© 2026 StudyShop – Thiết kế bởi Tổ 3</p>
+
+</footer>
+
+</body>
+</html>
