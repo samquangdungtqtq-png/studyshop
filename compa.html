@@ -8,7 +8,7 @@
 
 body{
 margin:0;
-background:mistyrose;
+background:#fff0f5;
 font-family:"Segoe UI", sans-serif;
 color:#0A3D62;
 }
@@ -18,12 +18,11 @@ text-decoration:none;
 color:inherit;
 }
 
+
 header{
-background: linear-gradient(135deg,#5d9cec,#4a89dc);
-color:white;
+background:#fff0f5;
 position:relative;
 }
-.banner{position:relative;}
 
 .logo{
 position:absolute;
@@ -41,13 +40,13 @@ overflow:hidden;
 }
 
 .banner img.bg{
-position:absolute;
-top:0;
-left:0;
-width:100%;
-height:100%;
-object-fit:cover;
-z-index:1;
+ position:absolute;
+ top:0;
+ left:0;
+ width:100%;
+ height:100%;
+ object-fit:cover;
+ z-index:1;
 }
 
 .banner h1,
@@ -55,23 +54,17 @@ z-index:1;
 position:relative;
 z-index:2;
 color:black;
-
 }
-
 
 .banner h1{
 font-size:40px;
-margin:10px 0;
 }
 
 .banner p{
 font-size:18px;
-margin-bottom:20px;
 }
 
-main{
-padding:60px 80px;
-}
+
 .navbar{
 background:#bde0fe;
 padding:15px 0;
@@ -81,14 +74,13 @@ padding:15px 0;
 list-style:none;
 display:flex;
 justify-content:center; 
-gap:10px;
+gap:20px;
 margin:0;
 padding:0;
 }
 
 .menu li a{
 font-weight:600;
-color:#0A3D62;
 padding:8px 12px;
 transition:0.3s;
 }
@@ -97,17 +89,34 @@ transition:0.3s;
 color:#ff6b6b;
 }
 
-.menu li a:link,
-.menu li a:visited,
-.menu li a:active{
-color:#0A3D62;
+
+.chao{
+text-align:center;
+font-size:26px;
+font-weight:bold;
+margin:20px 0;
+animation: glow 2s infinite alternate, slide 5s infinite;
 }
+
+@keyframes glow{
+0%{color:#800080; text-shadow:0 0 5px #ff99ff;}
+50%{color:#ff6b6b; text-shadow:0 0 10px #ff6b6b;}
+100%{color:#4a89dc; text-shadow:0 0 5px #4a89dc;}
+}
+
+@keyframes slide{
+0%{transform:translateX(-20px);}
+50%{transform:translateX(20px);}
+100%{transform:translateX(-20px);}
+}
+
+
 .tieude{
 text-align:center;
 font-size:34px;
 margin-bottom:40px;
-color:#0A3D62;
 }
+
 
 .cacsanpham{
 display:grid;
@@ -132,7 +141,6 @@ transform:translateY(-5px);
 width:100%;
 height:220px;
 object-fit:cover;
-background:white;
 }
 
 .noidungsp{
@@ -150,32 +158,71 @@ margin:10px 0 15px;
 .noidungsp button{
 padding:10px 22px;
 border:none;
-border-radius:20px;
-background:#4a89dc;
+border-radius:25px;
+background:linear-gradient(135deg,#4a89dc,#5d9cec);
 color:white;
 cursor:pointer;
-transition:0.3s;
+font-weight:600;
+transition:all 0.3s ease;
+position:relative;
+overflow:hidden;
 }
 
 .noidungsp button:hover{
-background:#357ABD;
+transform:translateY(-3px) scale(1.05);
+box-shadow:0 6px 15px rgba(0,0,0,0.2);
+background:linear-gradient(135deg,#ff6b6b,#ff8787);
+}
+
+
+.noidungsp button:active{
+transform:scale(0.95);
+box-shadow:0 2px 5px rgba(0,0,0,0.2);
+}
+
+.noidungsp button::before{
+content:"";
+position:absolute;
+top:0;
+left:-100%;
+width:100%;
+height:100%;
+background:rgba(255,255,255,0.3);
+transform:skewX(-25deg);
+transition:0.5s;
+}
+
+.noidungsp button:hover::before{
+left:100%;
 }
 
 footer{
-background:#0A3D62;
-color:#c7c7c7;
-text-align:center;
-padding:30px;
-margin-top:70px;
+ background:#0A3D62;
+ color:#ccc;
+ padding:30px 40px 10px;
+ margin-top:30px;
+ font-size:14px;
+}
+.thongtinfooter{
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+ gap:15px;
+ margin-bottom:10px;
 }
 
-.thongtinfooter{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:30px;
-margin-bottom:30px;
-text-align:left;
-padding:0 40px;
+.cotfooter h4{
+ color:white;
+ margin-bottom:5px;
+ font-size:14px;
+}
+
+.cotfooter p{
+ margin:3px 0;
+}
+.banquyen{
+ text-align:center;
+ border-top:1px solid #444;
+ padding-top:15px;
 }
 
 </style>
@@ -190,15 +237,14 @@ padding:0 40px;
 
 <h1>COMPA – Ê KE HỌC SINH</h1>
 <p>Dụng cụ học tập chính xác – bền đẹp – giá tốt</p>
-
 </div>
 </header>
 
 <nav class="navbar">
 <ul class="menu">
 <li><a href="index.html">Trang chủ</a></li>
-<li><a href="gioithieu.html">Giới thiệu</a></li>
-<li><a href="but.html">Bút</a></li>
+<li><a href="about.html">Giới thiệu</a></li>
+<li><a href="products.html">Bút</a></li>
 <li><a href="compa.html">Compa</a></li>
 <li><a href="vo.html">Vở</a></li>
 <li><a href="balo.html">Balo</a></li>
@@ -206,11 +252,12 @@ padding:0 40px;
 </ul>
 </nav>
 
-<h2 style="text-align:center; color:#800080;">
+<h2 class="chao">
 ✨ Chào mừng bạn đến với cửa hàng compa của StudyShop ✨
 </h2>
 
 <h2 class="tieude">CÁC SẢN PHẨM COMPA NỔI BẬT</h2>
+
 <div class="cacsanpham">
 
 <div class="sanpham">
@@ -232,7 +279,7 @@ padding:0 40px;
 </div>
 
 <div class="sanpham">
-<img src="boekecopam.jpg">
+<img src="compaxin.jpg">
 <div class="noidungsp">
 <h3>Bộ Compa + Eke</h3>
 <p class="gia">30.000đ</p>
@@ -241,7 +288,7 @@ padding:0 40px;
 </div>
 
 <div class="sanpham">
-<img src="com1.jpg">
+<img src="compakimloai.jpg">
 <div class="noidungsp">
 <h3>Compa kim loại</h3>
 <p class="gia">25.000đ</p>
@@ -250,73 +297,73 @@ padding:0 40px;
 </div>
 
 <div class="sanpham">
-<img src="com3.jpg">
+<img src="compadethg.jpg">
 <div class="noidungsp">
-<h3>Bộ compa-eke dễ thương </h3>
+<h3>Bộ compa-eke dễ thương</h3>
 <p class="gia">35.000đ</p>
 <button><a href="contact.html">Mua ngay</a></button>
 </div>
 </div>
 
 <div class="sanpham">
-<img src="com2.jpg">
+<img src="la.jpg">
 <div class="noidungsp">
-<h3>Bộ compa-eke gấu </h3>
+<h3>Compa cổ</h3>
 <p class="gia">35.000đ</p>
 <button><a href="contact.html">Mua ngay</a></button>
 </div>
 </div>
-
 
 <div class="sanpham">
-<img src="com4.jpg">
+<img src="boekecompa.jpg">
 <div class="noidungsp">
-<h3>Bộ compa-eke gấu </h3>
+<h3>Bộ compa-eke</h3>
 <p class="gia">35.000đ</p>
 <button><a href="contact.html">Mua ngay</a></button>
 </div>
 </div>
 
+<div class="sanpham">
+<img src="compane.jpg">
+<div class="noidungsp">
+<h3>Compa ưu đãi</h3>
+<p class="gia">15.000đ</p>
+<button><a href="contact.html">Mua ngay</a></button>
+</div>
+</div>
+</div>
 </div>
 
-<br>
-
-<div style="text-align:center;">
-<button style="padding:10px 20px;background:#4a89dc;border:none;border-radius:20px;">
-<a href="index.html">Quay lại trang chủ</a>
-</button>
 </div>
 
-</main>
+</div>
+
 
 <footer>
-
 <div class="thongtinfooter">
-
-<div>
+<div class="cotfooter">
 <h4>Về Website</h4>
-<p>Website bán đồ dùng học tập </p>
+<p>Website giới thiệu các đồ dùng học tập đẹp đẽ</p>
 </div>
 
-<div>
-<h4>Liên hệ</h4>
-<p>Email: studyshop@gmail.com</p>
-<p>Điện thoại: 0363 636 636</p>
-<p>Địa chỉ: Thôn Tân Thành, xã Minh Thanh tỉnh Tuyên Quang</p>
+<div class="cotfooter">
+<h4>Thông Tin Liên Hệ</h4>
+<p>Email: to3chuyenbandodunghoctap@gmail.com</p>
+<p>Điện thoại: 03636363636</p>
+<p>Địa chỉ: Thôn Tân Thành, xã Minh Thanh, tỉnh Tuyên Quang</p>
 </div>
 
-<div>
-<h4>Liên kết</h4>
-<p>Website Đồ Dùng Học Tập</p>
-<p>Bộ Giáo Dục</p>
-<p>Cục Văn Hoá VN</p>
-<p>© 2026 <span>StudyShop</span> – Website bán đồ dùng học tập</p>
+<div class="cotfooter">
+<h4>Liên Kết Hữu Ích</h4>
+<p>Website đồ dùng học tập</p>
+<p>Bộ giáo dục</p>
+<p>Cục văn hoá Việt Nam</p>
+</div>
 </div>
 
+<div class="banquyen">
+<p>&copy; 2026 Thiết kế bởi <strong>Tổ 3</strong></p>
 </div>
-
-<p>© 2026 StudyShop – Thiết kế bởi Tổ 3</p>
-
 </footer>
 
 </body>
