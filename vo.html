@@ -7,7 +7,7 @@
 <style>
 body{
   margin:0;
-  background:#FFF8DC;
+  background:#fff0f5;
   font-family:"Segoe UI", sans-serif;
   color:#0A3D62;
 }
@@ -17,14 +17,13 @@ a{
   color:inherit;
 }
 
-/* HEADER */
 header{
   background: 
   color:white;
   padding-bottom:5px;
 }
 
-/* BANNER */
+
 .banner{
   position: relative;
   text-align: center;
@@ -71,14 +70,15 @@ header{
   display:flex;
   justify-content:center;
   gap:40px;
-  padding:12px;
-  border:none; /* thêm dòng này */
+  padding:10px;
+  border:none; 
 }
 .menu a{
   color:#0A3D62;
+  font-size:18px;
+  font-weight:700;
   transition:0.3s;
 }
-
 .menu a:hover{
   color:#4a89dc;
 }
@@ -103,7 +103,7 @@ main{
   padding-left:100%;
   animation:chay 10s linear infinite;
   color:#800080;
-  font-size:20px;
+  font-size:25px;
 }
 
 @keyframes chay{
@@ -168,7 +168,7 @@ main{
 .noidungsp button:hover{
   background:#357ABD;
 }
-/* bỏ khoảng cách mặc định */
+
 .thongtin-hover ul{
   margin:0;
   padding-left:18px;
@@ -209,39 +209,35 @@ main{
   padding-left:0;
 }
 
-/* FOOTER */
 footer{
-  background:#0A3D62;
-  color:#ccc;
-  padding:30px 20px 10px;
+ background:#0A3D62;
+ color:#ccc;
+ padding:30px 40px 10px;
+ margin-top:30px;
+ font-size:14px;
 }
 
-footer > div{
-  max-width:1000px;
-  margin:0 auto;
-}
-.thongtinfooter {
-  display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(180px,1fr));
-  gap:20px;
-  margin-bottom:20px;
+.thongtinfooter{
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+ gap:15px;
+ margin-bottom:10px;
 }
 
 .cotfooter h4{
-  color:white;
-  margin-bottom:6px;
+ color:white;
+ margin-bottom:5px;
+ font-size:14px;
 }
 
 .cotfooter p{
-  line-height:1.3;
-  margin:4px 0;
+ margin:3px 0;
 }
 
 .banquyen{
-  text-align:center;
-  border-top:1px solid #444;
-  padding-top:10px;
-  font-size:13px;
+ text-align:center;
+ border-top:1px solid #444;
+ padding-top:15px;
 }
 </style>
 </head>
@@ -253,14 +249,14 @@ footer > div{
     <img src="logo.jpg" class="logo">
     <img src="banner5.jpg" class="bg">
     <h1>VỞ HỌC SINH CHÍNH HÃNG</h1>
-    <p>Giấy trắng, mịn – Viết mượt – Giá cực tốt</p>
+  
   </div>
 
 
   <nav class="menu">
     <a href="index.html">Trang chủ</a>
-    <a href="gioithieu.html">Giới thiệu</a>
-    <a href="but.html">Bút</a>
+    <a href="about.html">Giới thiệu</a>
+    <a href="products.html">Bút</a>
     <a href="compa.html">Compa</a>
     <a href="vo.html">Vở</a>
     <a href="balo.html">Balo</a>
@@ -277,11 +273,11 @@ footer > div{
 
   <div class="cacsanpham">
 
-<!-- SP1 -->
+
 <div class="sanpham">
-  <a href="chitiet1.html">
+ 
     <img src="vo9999.jpeg">
-  </a>
+
 
   <div class="thongtin-hover">
     <ul>
@@ -291,18 +287,155 @@ footer > div{
   </div>
 
   <div class="noidungsp">
-    <a href="chitiet1.html">
+    
       <h3>Vở kẻ ngang 200 trang</h3>
-    </a>
+   
     <p class="gia">12.000đ</p>
     <button><a href="contact.html">Mua ngay</a></button>
   </div>
 </div>
 
-<!-- SP2 -->
+
 <div class="sanpham">
-  <a href="chitiet2.html">
+  
     <img src="socong.jpg">
+  
+
+  <div class="thongtin-hover">
+    <ul>
+      <li>Tháo lắp giấy dễ</li>
+      <li>Gọn gàng tiện lợi</li>
+  
+    </ul>
+  </div>
+
+  <div class="noidungsp">
+    
+      <h3>Sổ còng A5/B5</h3>
+   
+    <p class="gia">20.000đ</p>
+    <button><a href="contact.html">Mua ngay</a></button>
+  </div>
+</div>
+
+
+<div class="sanpham">
+ 
+    <img src="vocaro.jpg">
+  
+
+  <div class="thongtin-hover">
+    <ul>
+      <li>Kẻ ô chuẩn</li>
+      <li>Trình bày đẹp</li>
+    </ul>
+  </div>
+
+  <div class="noidungsp">
+   
+      <h3>Vở caro</h3>
+   
+    <p class="gia">10.000đ</p>
+    <button><a href="contact.html">Mua ngay</a></button>
+  </div>
+</div>
+
+
+<div class="sanpham">
+  
+    <img src="sobia.jpg">
+
+
+  <div class="thongtin-hover">
+    <ul>
+     
+      <li>Bảo vệ giấy tốt</li>
+	  <li>Bìa cứng chắc chắn</li>
+    
+    </ul>
+  </div>
+
+  <div class="noidungsp">
+   
+      <h3>Sổ còng bìa cứng</h3>
+    
+    <p class="gia">15.000đ</p>
+    <button><a href="contact.html">Mua ngay</a></button>
+  </div>
+</div>
+
+
+<div class="sanpham">
+  
+    <img src="vomithuat.jpg">
+ 
+
+  <div class="thongtin-hover">
+    <ul>
+      
+      <li>Phù hợp mỹ thuật</li>
+	  <li>Giấy dày chất lượng</li>
+    </ul>
+  </div>
+
+  <div class="noidungsp">
+   
+      <h3>Vở mỹ thuật A4</h3>
+    
+    <p class="gia">18.000đ</p>
+    <button><a href="contact.html">Mua ngay</a></button>
+  </div>
+</div>
+
+
+<div class="sanpham">
+ 
+    <img src="Sokiemhiep.jpg">
+
+
+  <div class="thongtin-hover">
+    <ul>
+      <li>Dễ mang theo</li>
+	  <li>Nhỏ gọn tiện lợi</li>
+
+    </ul>
+  </div>
+
+  <div class="noidungsp">
+   
+      <h3>Sổ tay</h3>
+    
+    <p class="gia">5.000đ</p>
+    <button><a href="contact.html">Mua ngay</a></button>
+  </div>
+</div>
+
+<div class="sanpham">
+ 
+    <img src="cte.jpg">
+
+
+  <div class="thongtin-hover">
+    <ul>
+      <li>Trình bày đẹp</li>
+      <li>Nhỏ gọn tiện lợi</li>
+    
+    </ul>
+  </div>
+
+  <div class="noidungsp">
+   
+      <h3>Vở Crabit dễ thương</h3>
+    </a>
+    <p class="gia">24.000đ</p>
+    <button><a href="contact.html">Mua ngay</a></button>
+  </div>
+</div>
+
+
+<div class="sanpham">
+  
+    <img src="meo.jpg">
   </a>
 
   <div class="thongtin-hover">
@@ -314,104 +447,13 @@ footer > div{
   </div>
 
   <div class="noidungsp">
-    <a href="chitiet2.html">
-      <h3>Sổ còng A5/B5</h3>
-    </a>
+    
+      <h3>Sổ lò xo mèo con dễ thương</h3>
+    
     <p class="gia">20.000đ</p>
     <button><a href="contact.html">Mua ngay</a></button>
   </div>
 </div>
-
-<!-- SP3 -->
-<div class="sanpham">
-  <a href="chitiet3.html">
-    <img src="vocaro.jpg">
-  </a>
-
-  <div class="thongtin-hover">
-    <ul>
-      <li>Kẻ ô chuẩn</li>
-      <li>Trình bày đẹp</li>
-    </ul>
-  </div>
-
-  <div class="noidungsp">
-    <a href="chitiet3.html">
-      <h3>Vở caro</h3>
-    </a>
-    <p class="gia">10.000đ</p>
-    <button><a href="contact.html">Mua ngay</a></button>
-  </div>
-</div>
-
-<!-- SP4 -->
-<div class="sanpham">
-  <a href="chitiet4.html">
-    <img src="sobia.jpg">
-  </a>
-
-  <div class="thongtin-hover">
-    <ul>
-      <li>Bìa cứng chắc chắn</li>
-      <li>Bảo vệ giấy tốt</li>
-    
-    </ul>
-  </div>
-
-  <div class="noidungsp">
-    <a href="chitiet4.html">
-      <h3>Sổ còng bìa cứng</h3>
-    </a>
-    <p class="gia">15.000đ</p>
-    <button><a href="contact.html">Mua ngay</a></button>
-  </div>
-</div>
-
-<!-- SP5 -->
-<div class="sanpham">
-  <a href="chitiet5.html">
-    <img src="vomithuat.jpg">
-</a>
-
-  <div class="thongtin-hover">
-    <ul>
-      <li>Giấy dày chất lượng</li>
-      <li>Phù hợp mỹ thuật</li>
-    </ul>
-  </div>
-
-  <div class="noidungsp">
-    <a href="chitiet5.html">
-      <h3>Vở mỹ thuật A4</h3>
-    </a>
-    <p class="gia">18.000đ</p>
-    <button><a href="contact.html">Mua ngay</a></button>
-  </div>
-</div>
-
-<!-- SP6 -->
-<div class="sanpham">
-  <a href="chitiet6.html">
-    <img src="Sokiemhiep.jpg">
-  </a>
-
-  <div class="thongtin-hover">
-    <ul>
-      <li>Nhỏ gọn tiện lợi</li>
-      <li>Dễ mang theo</li>
-    
-    </ul>
-  </div>
-
-  <div class="noidungsp">
-    <a href="chitiet6.html">
-      <h3>Sổ tay</h3>
-    </a>
-    <p class="gia">5.000đ</p>
-    <button><a href="contact.html">Mua ngay</a></button>
-  </div>
-</div>
-
 </div>
   <div style="text-align:center; margin-top:30px;">
     <button><a href="index.html">Quay lại trang chủ</a></button>
